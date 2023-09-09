@@ -1,0 +1,67 @@
+# Game Design Document
+
+## Game Title: Dungeon Conquest
+
+### Overview
+
+*Dungeon Conquest* is a multiplayer dungeon-crawling game where players are split into two groups: Dungeon Masters and Adventurers. The Dungeon Masters (DMs) design and control the dungeon layout, Obstacles (O), Non-Player Characters (NPCs), and Events (E) while the Adventurers navigate through the dungeon, encountering challenges set by the Dungeon Masters.
+
+### Teams and Structure
+
+- **Maximum Players**: 6 players (2 groups)
+- **Team Structure**: Determined by game creator, with the option for other players to vote for the team structure. The smaller group becomes the Dungeon Master(s).
+- **Team Composition**:
+   - 1v5, 2v4, or 3v3
+   - If 3v3, the lobby can decide Dungeon Masters team through coin flip, vote, or instant assignment.
+
+### Map Selection
+
+- **Decision Process**: Entire game lobby votes on the map choice.
+- **Options**: Direct choice, random selection, or vote between two maps.
+
+### Dungeon Master Phase
+
+- **Layout Creation**: Dungeon Master(s) have 90 seconds to place Obstacles, NPCs, and Events around the map.
+- **Obstacles, NPCs, and Events**:
+   - *Obstacles*: Environmental challenges or traps.
+   - *NPCs*: Sometimes controlled by Dungeon Master(s), sometimes AI controlled. Used to try to kill adventurers at certain points
+   - *Events*: Triggered by specific conditions.
+
+### Adventurer Phase
+
+- **Loadout Selection**: Adventurers have 60 seconds to choose equipment, including:
+   - Head, chest, hands, legs, feet, ring, necklace, cape.
+   - Primary weapon, secondary weapon.
+   - 6 consumable slots.
+   - Inventory (weight capacity limited).
+- **Visibility**: Dungeon Master(s) have full view of Adventurers' loadouts.
+- **Difficulty Proposal**: Adventurers can propose changes to difficulty or request information about challenges. Majority vote needed to make changes.
+- **Reward Modification**: Adveturers can propose difficulty adjustments to dungeon. Changes to difficulty must be agreed on by all Dungeon Master(s), a counter proposal can be made.
+    If difficulty is increased Adventurers rewards increase. If difficulty is decreased then Adventurers rewards decrease. This is the opposite for Dungeon Master(s)
+
+
+### Gameplay
+
+- **Round Start**: 5-second countdown after Adventurers choose their loadout.
+- **Objective**: Adventurers must reach the treasure room at the end of the dungeon.
+- **Challenges**:
+   - Adventurers face Obstacles, NPCs, and Events controlled by Dungeon Master(s).
+   - Dungeon Master(s) can trigger challenges based on specific conditions (e.g., killing an NPC, crossing a waypoint).
+
+### Combat Mechanics
+
+- **NPC Control**: Dungeon Master(s) can optionally control certain NPCs.
+- **NPC Limit**: Dungeon Master(s) can control a limited number of NPCs, determined during initiation.
+   - e.g., control 2 NPCs, and the rest are AI driven.
+- **Victory Conditions**:
+   - If all Adventurers die, Dungeon Master(s) receive rewards.
+   - If Adventurers reach the treasure room, they receive rewards.
+
+### Itemization
+
+- **Quality Tiers**: Items range from poor to legendary in quality.
+- **Randomized Stats**: Stats (Agility, Power, Hardness, Rejuvenation, Range) generated at runtime based on item quality and dungeon difficulty.
+
+### Conclusion
+
+*Dungeon Conquest* offers a dynamic multiplayer experience where teamwork, strategy, and quick decision-making are crucial for success. The balance between Adventurers and Dungeon Master(s) ensures engaging gameplay for all participants.
